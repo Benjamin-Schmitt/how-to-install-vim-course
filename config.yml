@@ -1,0 +1,18 @@
+title: How to install VIM
+description: >-
+  This short tutorial is aimed and people who are new to both linux and VIM who
+  want VIM to be run in Python3.
+template:
+  repo: how-to-install-vim-template
+  name: how-to-install-vim
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
