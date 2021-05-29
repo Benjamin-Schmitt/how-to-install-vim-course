@@ -1,25 +1,25 @@
-# how-to-install-vim-course
-This short tutorial is aimed and people who are new to both linux and VIM who want VIM to be run in Python3.
+Compiling VIM in Python3 instead of Python2 and setting up the vimrc-file
+
+Intro:
+This guide only aims to fix common problems, when setting up VIM for the first time. It does not go into detail when it comes to certain addons. It merely aims to fix the problems I personally encountered when first installing VIM.
 
 
-Setting up VIM on a new Linux Distro:
-1) locate your vimrc file
-- go to VIM and do :version. VIM will display the enabled features and the sequence in which VIM will check your several vimrc files. VIM starts by checking the first vimrc file it expects and if none of them are there, it will default to the default vimrc file. 
+Step 1) locate your vimrc file
+Open VIM and type :version. VIM will display the enabled features and the sequence in which VIM will check vimrc files. VIM starts by checking the first vimrc file it expects and if none of them are there, it will default to the default vimrc file.
 
-Note: Most of these files, VIM checks do not exist before you create them. VIM simply expects them because it is common practice to create them.
-
-Note: You don’t want to change the default setting file. 
-https://stackoverflow.com/questions/10921441/where-is-my-vimrc-file 
+Note: Most of these files checked by VIM, do not exist before you create them. VIM expects them because it is common practice to create them.
+Note: You don’t want to change the default setting file. Here is why: https://stackoverflow.com/questions/10921441/where-is-my-vimrc-file 
 
 
-2) Creating a new vimrc
-To modify your vimrc file, first you need to create it. 
+Step 2) Creating a new vimrc
+As mentioned before, to modify your vimrc file, you need to create it first. 
 To create your vimrc, start VIM and do the following:
 :e $HOME/.vimrc
-This will create a file named .vimrc in your Home directory. This is the file you’re gonna want to modify your VIM with.
+This will create a file named .vimrc in your home directory. This is the file you’re gonna want to use, when modifying VIM.
 
 
-3) Guides for editing the vimrc
+Step 3) Editing the vimrc
+There are plenty of guides out there as to how to edit your vimrc. Here are some I liked:
 https://github.com/amix/vimrc
 https://realpython.com/vim-and-python-a-match-made-in-heaven/#lets-make-an-ide
 https://www.youtube.com/watch?v=vlb3qUiS2ZY&t=342s
@@ -30,7 +30,9 @@ https://dev.to/bezirganyan/editor-wars-vim-as-a-perfect-python-ide-19ne
 https://medium.com/swlh/setting-up-vim-940eaf179fc8
 
 
-4) Install Vundle (Packetmanager like PIP)
+Step 4) Installing a packetmanager
+You're going to want to install a packetmanager for the modules you wanna youse. I personally like Vundle.
+
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 touch ~/.vimrc
 
